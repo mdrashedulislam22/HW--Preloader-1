@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    background: #d1f9d1;
+    font-family: sans-serif;
+    justify-content: center;
+   
+}
+
+.Register-now{
+    display: flex;
+    width: 350px;
+    height: 600px;
+    padding: 10px;
+    border: 5px solid #34495e;
+    border-radius: 15px;
+    background: rgba(52,73,94,1);
+   margin: 10% 0% 10% 38%;
+
+   
+}
+form h2{
+    color: #ecf0f1;
+
+}
+.input-style{
+    margin-top: 18px;
+
+}
+.input-style input{
+    width: 90%;
+    background: transparent;
+    padding: 3px;
+    border: 2px solid #16a085;
+    border-radius: 5px;
+    color:#ecf0f1 ;
+    height: 28px;
+    margin-bottom: 10px;
+}
+.input-style .option input{
+    width: 90%;
+    background: transparent;
+    padding: 3px;
+    border: 2px solid #16a085;
+    border-radius: 5px;
+    color:#ecf0f1 ;
+    height: 15px;
+    margin-bottom: 10px;
+}
+.input-style input label{
+    color:#ecf0f1 ;
+    font-size: 15px;
+    margin-bottom: 4px;
+    display: block;
+    cursor: pointer;
+    padding: 1px;
+}
+.gender{
+    color:#ecf0f1 ;
+    margin-top: 4px;
+
+}
+.option{
+    margin-top: 6px;
+}
+.option label{
+    color:#ecf0f1 ;
+    cursor: pointer;
+}
+.register-page input{
+    width: 90%;
+    margin-top: 20px;
+    padding: 10px;
+    background: linear-gradient(130deg, #1abc9c, #16a085);
+    border-radius: 5px;
+    color:#ecf0f1 ;
+    cursor: pointer;
+    border: none;
+}
+.register-page input:hover{
+    background: linear-gradient(-130deg, #1abc9c, #16a085);
+}
+/* Animation section start here */
+
+#section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #042104;
+    animation: animatbg 10s linear infinite;
+
+}
+@keyframes animatbg {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+section .loader{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+section .loader span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    transform: rotate(calc(18deg * var(--i)));
+}
+section .loader span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00ff0a;
+    box-shadow: 0 0 10px #00ff0a,
+                0 0 20px #00ff0a,
+                0 0 40px #00ff0a,
+                0 0 60px #00ff0a,
+                0 0 80px #00ff0a,
+                0 0 100px #00ff0a;
+    
+    animation: animat 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animat{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+
+section .loader .amd{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 97%;
+    height: 97%; 
+    transform: rotate(calc(-18deg * var(--i)));
+}
+section .loader .amd::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #f4e108;
+    box-shadow: 0 0 10px #f4e108,
+                0 0 20px #f4e108,
+                0 0 40px #f4e108,
+                0 0 60px #f4e108,
+                0 0 80px #f4e108,
+                0 0 100px#f4e108;
+    animation: animat 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animat{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+/* Animation section start here */
